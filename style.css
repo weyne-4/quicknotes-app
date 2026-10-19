@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --back-g-color: white;
+  --text-color: #212529;
+  --Ch-counter-color: #0e100e;
+}
+
+body.dark {
+  --back-g-color: #343a40;
+  --text-color: #f8f9fa;
+  --Ch-counter-color: #f4f6f8;
+}
+
+body {
+  background-color: var(--back-g-color);
+  color: var(--text-color);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+header {
+  padding: 20px;
+  text-align: center;
+  background-color: #0a67d8da;
+  color: white;
+}
+main {
+  max-width: 700px;
+  padding: 20px;
+  margin: 0 auto;
+  width: 100%;
+}
+section {
+  background-color: white;
+  color: #212529;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #0a67d8da;
+  color: whitesmoke;
+}
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font: inherit;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #0a67d8;
+  outline-offset: 2px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.note {
+  padding: 16px;
+  border: 1px solid green;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: white;
+  overflow-wrap: anywhere;
+  border-left: 5px solid #6c757d;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(214, 63, 138);
+  font: inherit;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: aqua;
+}
+.category-personal {
+  border-left: 5px teal;
+}
+.category-work {
+  border-left: 5px dark red;
+}
+.category-study {
+  border-left: 5px blueviolet;
+}
+#error-message {
+  color: red;
+  margin-top: 10px;
+}
+.app {
+  color: burlywood;
+}
+.q {
+  color: red;
+}
+.u {
+  color: orange;
+}
+.i {
+  color: yellow;
+}
+.c {
+  color: purple;
+}
+.k {
+  color: blue;
+}
+.n {
+  color: indigo;
+}
+.o {
+  color: violet;
+}
+.t {
+  color: deeppink;
+}
+.e {
+  color: black;
+}
+.s {
+  color: goldenrod;
+}
+@media (max-width: 600px) {
+  main {
+    width: 100%;
+    padding: 12px;
+  }
+
+  section {
+    padding: 15px;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .note {
+    width: 100%;
+  }
+}
