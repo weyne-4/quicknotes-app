@@ -5,6 +5,7 @@ const noteCount = document.querySelector("#note-count");
 const noteList = document.querySelector("#notes-list");
 const category = document.querySelector("#note-category");
 const searchInput = document.querySelector("#search-input");
+const clearBtn = document.querySelector("#clear-all-Btn");
 
 const notes = [];
 
@@ -114,5 +115,16 @@ function loadNotes() {
 }
 loadNotes();
 searchInput.addEventListener("input", function () {
-    render();
+  render();
 });
+
+clearBtn.addEventListener("click", function () {
+  const caution = confirm("Delete all notes?");
+
+  if (caution) {
+    notes.length = 0;
+    saveNotes();
+    render();
+  }
+});
+
